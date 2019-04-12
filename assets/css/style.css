@@ -1,87 +1,258 @@
 * {
-    border: 0;
-    margin: 0;
-    font-family: Noto;
+  border: 0;
+  margin: 0;
 }
 
 body {
-    color: #777777;
+  color: #777777;
+  font-family: "Noto Serif TC", serif;
+  font-family: "Luckiest Guy", cursive;
+}
+
+#mainBody {
+  background: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: cover;
 }
 
 .header {
-    background: #ffffff;
-    /* padding: 20px; */
-    border-bottom: 5px solid #cccccc;
-    overflow: hidden;
+  background: #ffffff;
+  border-bottom: 5px solid #cccccc;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 
-footer {
-    background: #666666;
+h1 {
+  float: left;
+  padding: 30px;
+  font-size: 30px;
+}
+
+.footer {
+  background: #666666;
+  border-top: 6px solid #4aaaa5;
+  overflow: hidden;
+  margin-top: 50px;
+  padding: 20px;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+.navBar {
+  float: right;
 }
 
 li {
-    float: right;
-    margin-top: 35px;
-    overflow: hidden;
-    
+  float: left;
+  margin: 35px 10px;
+  overflow: hidden;
+  font-size: 20px;
 }
 
-.addBorder a {
-    text-decoration: none;
-    border-right: 2px solid #777777;
-    margin: 35px;
-    padding-right: 30px;
+a {
+  padding-right: 15px;
 }
-h1 {
-    width: 500px; 
-    float: left;
-    padding: 30px;
-    
+
+/* Pseudo rules for NavBar */
+a:link {
+  text-decoration: none;
 }
+
+a:hover {
+  color: rgb(103, 190, 103);
+}
+
+a:visited {
+  color: #777777;
+}
+
+/* Clear fix hack to move content box down */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* h2 rules */
 h2 {
-    color: #4aaaa5;
-    
+  color: #4aaaa5;
+  font-size: 32px;
+  border-bottom: 2px solid rgba(179, 172, 172, 0.514);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
+/* container is setting margin to center the content */
 .container {
-    background:#ffffff;
-    width: 960px;
-    margin: 0px auto;
-    /* border: 5px solid #dddddd; */
-    
+  background: #ffffff;
+  width: 960px;
+  margin: 0px auto;
 }
+
+/* defining the box that contains main content */
 .content {
-    padding: 40px;
+  padding: 40px;
+  box-shadow: 10px 10px 5px grey;
 }
 
 p {
-    line-height: 30px;
+  line-height: 30px;
 }
-.hrContent {
-    border: 1px solid #777777;
-    
+/* .hrContent {
+  border: 1px solid #777777; */
 }
 .hrFoot {
-    background: #4aaaa5;
-
+  background: #4aaaa5;
 }
 
 .myName {
-    color: white;
-    background: #4aaaa5;
-    width: 25%; 
-    float: left;
-    /* position: relative;
-    left: 300px; */
+  color: white;
+  background: #4aaaa5;
+  float: left;
 }
 
-img {
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin-right: 20px;
+.imgMe {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 20px;
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+}
+
+/* rules for form */
+input, 
+textarea{
+  border: 2px solid #77777733;
+  margin: 5px 0px;
+}
+
+button{
+  background: #4aaaa5;
+  color: #fff;
+  font-family: "Noto Serif TC", serif;
+  font-family: "Luckiest Guy", cursive; 
+  font-size: 16px;
+  padding: 10px 30px;
+  
+}
+
+/* rules for porfolio project icons */
+#proj-1,
+#proj-2,
+#proj-3,
+#proj-4,
+#proj-5 {
+  height: 250px;
+  width: 250px;
+  float: left;
+  
+  
+}
+
+#proj-1 img,
+#proj-2 img,
+#proj-3 img,
+#proj-4 img,
+#proj-5 img{
+  margin-bottom: 33px;
+  margin-right: 33px;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  overflow: hidden;
+   
+}
+#proj-2 {
+  margin-bottom: 33px; 
+  margin-left: 33px;
+  
+   
+}
+#proj-3 {
+  margin-bottom: 33px;
+  margin-right: 33px;   
+   
+}
+#proj-4 {
+  margin-bottom: 33px;
+     
+}
+#proj-5 {
+
+}
+
+.banner-1,
+.banner-2,
+.banner-3,
+.banner-4,
+.banner-5 {
+  height: 30px;
+  width: 250px; 
+  background: #4aaaa5;
+  color: #fff
+
+}
+
+.banner-1 {
+  position: absolute;
+  top: 450px;
+}
+.banner-1
+p {
+  text-align: center;
+}
+.banner-2 {
+  position: absolute;
+  top: 450px;
+  left: 635px;
+}
+.banner-2
+p {
+  text-align: center;
+}
+
+.banner-3 {
+  position: absolute;
+  top: 732px;
+  left: 352px;
+}
+.banner-3
+p {
+  text-align: center;
+}
+
+.banner-4 {
+  position: absolute;
+  top: 732px;
+  left: 635px;
+}
+.banner-4
+p {
+  text-align: center;
+}
+
+.banner-5 {
+  position: absolute;
+  top: 1015px;
+  left: 352px;
+}
+.banner-5
+p {
+  text-align: center;
+}
+
+.banner-3,
+#proj-3 {
+  clear: both;
+}
+.banner-5,
+#proj-5 {
+  clear: both;
 }
